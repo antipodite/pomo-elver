@@ -20,6 +20,8 @@
 
 (in-package :pomo-elver)
 
+(local-time:set-local-time-cl-postgres-readers)
+
 (defun object->md5 (object)
   "Compute MD5 hash of given object and return it.
 This is used here to provide a unique ID for migrations by hashing the S-SQL

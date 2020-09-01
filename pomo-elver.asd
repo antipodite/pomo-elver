@@ -3,6 +3,7 @@
   :author "Isaac Stead"
   :license "GPL"
   :depends-on ("postmodern"
+               "cl-postgres+local-time"
                "ironclad"
                "alexandria"
                "local-time")
