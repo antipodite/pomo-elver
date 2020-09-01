@@ -6,14 +6,17 @@
 ;;;; comments, and a list of SQL queries that define the migration. They are stored
 ;;;; in a database table
 
-(defpackage weft.migrations
+(defpackage pomo-elver
   (:use :common-lisp
         :postmodern
         :ironclad)
   (:import-from :alexandria
                 :hash-table-values
                 :with-gensyms)
-  (:export :defmigration))
+  (:export :defmigration
+           :initial-migration
+           :apply-migration
+           :apply-all-migrations))
 
 (in-package :weft.migrations)
 
