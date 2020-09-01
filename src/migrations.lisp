@@ -18,7 +18,7 @@
            :apply-migration
            :apply-all-migrations))
 
-(in-package :weft.migrations)
+(in-package :pomo-elver)
 
 (defun object->md5 (object)
   "Compute MD5 hash of given object and return it.
